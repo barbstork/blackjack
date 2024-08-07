@@ -9,6 +9,7 @@ let hasBlackJack = false
 let isAlive = false
 let message = ""
 let messageEl = document.getElementById("message-el")
+let goodLuckEl = document.getElementById("goodluck-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
@@ -30,6 +31,7 @@ function getRandomCard() {
 function startGame() {
     isAlive = true
     hasBlackJack = false
+    goodLuckEl.textContent = " "
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     cards = [firstCard, secondCard]
